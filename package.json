@@ -1,0 +1,14 @@
+{
+  "name": "healthscan-backend",
+  "version": "1.0.0",
+  "description": "This project detect the food product and give back the feedback of it's good or not regarding their health deseases.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HealthScan"
+  ],
+  "author": "Prakash Talpada",
+  "license": "ISC"
+}
