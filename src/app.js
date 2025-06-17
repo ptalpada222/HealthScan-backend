@@ -18,11 +18,11 @@ app.use(cookieParser());
 
 // Import routes
 import userRouter from "./routes/user.route.js";
+import healthProfileRouter from "./routes/healthProfile.route.js";
 
 //Routes declaration
 app.use("/api/v1/user", userRouter);
-
-
+app.use("/api/v1/user", healthProfileRouter);
 
 //default api endpoint "http://localhost:5000/api/v1/"
 export default app;

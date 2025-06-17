@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 import User from "./user.model.js"; 
 
 const healthProfileSchema = new mongoose.Schema(
@@ -89,4 +89,6 @@ const healthProfileSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("HealthProfile", healthProfileSchema);
+const HealthProfile = mongoose.model("HealthProfile", healthProfileSchema);
+
+export default HealthProfile;
