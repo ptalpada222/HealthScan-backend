@@ -1,12 +1,30 @@
 import HealthProfile from "../models/healthProfile.model.js";
 import asyncHandler from "../utils/asyncHandler.js";
-import ApiError from "../utils/ApiError.js";
 import ApiResponse from "../utils/ApiResponse.js";
+import jwt from "jsonwebtoken";
 
 // Create or Update Health Profile
 const createOrUpdateHealthProfile = asyncHandler(async (req, res) => {
   try {
-    const userId = req.user._id;
+    const incomingRefreshToken = req.cookies.refreshToken;
+  
+    if (!incomingRefreshToken) {
+      return res.status(401).json({
+        statusCode: 401,
+        message: "Authentication failed. Refresh token is required.",
+      });
+    }
+    const decodeToken = jwt.verify(
+      incomingRefreshToken,
+      process.env.REFRESH_TOKEN_SECRET
+    );
+    const userId = decodeToken?._id;
+    if (!userId) {
+      return res.status(401).json({
+        statusCode: 401,
+        message: "Invalid refresh token",
+      });
+    }
     const {
       fullName,
       age,
@@ -28,7 +46,7 @@ const createOrUpdateHealthProfile = asyncHandler(async (req, res) => {
 
     // Basic validation for required fields
     if (!fullName || !age || !gender || !heightCm || !weightKg) {
-      res.status(400).json({
+      return res.status(400).json({
         statusCode: 400,
         message: "Full name, age, gender, height, and weight are required"
       });

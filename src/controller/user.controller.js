@@ -1,7 +1,5 @@
-import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
-import ApiError from "../utils/ApiError.js";
 import asyncHandler from "../utils/asyncHandler.js";
 import ApiResponse from "../utils/ApiResponse.js";
 
@@ -15,10 +13,11 @@ const generateAccessAndRefereshTokens = async (userId) => {
     await user.save({ validateBeforeSave: false });
     return { accessToken, refreshToken };
   } catch (error) {
-    throw new ApiError(
-      500,
-      "Something went wrong while generating access tokens and refresh tokens"
-    );
+    res.status(500).json({
+      statusCode: 500,
+      message:
+        "Something went wrong while generating access tokens and refresh tokens",
+    });
   }
 };
 
@@ -28,7 +27,10 @@ const registerUser = asyncHandler(async (req, res) => {
 
   // Validate that all fields are provided
   if ([email, phoneNumber, password].some((field) => field?.trim() === "")) {
-    throw new ApiError(400, "All fields are required");
+    return res.status(400).json({
+      statusCode: 400,
+      message: "All fields are required",
+    });
   }
 
   // Check if user already exists with the same email or phone number
@@ -38,10 +40,10 @@ const registerUser = asyncHandler(async (req, res) => {
 
   // If user already exists, throw an error
   if (existingUser) {
-    throw new ApiError(
-      409,
-      "User already exists with this email or phone number"
-    );
+    return res.status(409).json({
+      statusCode: 409,
+      message: "User already exists with this email or phone number",
+    });
   }
 
   // Create a new user
@@ -56,7 +58,10 @@ const registerUser = asyncHandler(async (req, res) => {
     "-password -refreshToken"
   );
   if (!createdUser) {
-    throw new ApiError(500, "Something went wrong while creating user");
+    return res.status(500).json({
+      statusCode: 500,
+      message: "Something went wrong while creating user",
+    });
   }
 
   //return response with created user details
@@ -71,21 +76,30 @@ const loginUser = asyncHandler(async (req, res) => {
 
   //check if email and password are provided
   if (!email) {
-    throw new ApiError(400, "Email and password are required");
+    return res.status(400).json({
+      statusCode: 400,
+      message: "Email and password are required",
+    });
   }
 
   const user = await User.findOne({ email });
 
   // If user does not exist, throw an error
   if (!user) {
-    throw new ApiError(404, "User not found with this email");
+    return res.status(404).json({
+      statusCode: 404,
+      message: "User not found with this email",
+    });
   }
 
   // Check if password is correct
   const isPasswordCorrect = await user.isPasswordCorrect(password);
 
   if (!isPasswordCorrect) {
-    throw new ApiError(401, "Incorrect password");
+    return res.status(401).json({
+      statusCode: 401,
+      message: "Incorrect password",
+    });
   }
 
   //generate access and refresh tokens
@@ -125,10 +139,10 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
 
   // Check if refresh token is provided
   if (!incomingRefreshToken) {
-    throw new ApiError(
-      400,
-      "Anauthentication failed. Refresh token is required."
-    );
+    return res.status(400).json({
+      statusCode: 400,
+      message: "Anauthentication failed. Refresh token is required.",
+    });
   }
 
   try {
@@ -141,11 +155,17 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
 
     // If user does not exist, throw an error
     if (!user) {
-      throw new ApiError(404, "Invalid refresh token");
+      return res.status(404).json({
+        statusCode: 404,
+        message: "Invalid refresh token",
+      });
     }
 
     if (incomingRefreshToken !== user?.refreshToken) {
-      throw new ApiError(401, "Refresh token is expired or used");
+      return res.status(401).json({
+        statusCode: 401,
+        message: "Refresh token is expired or used",
+      });
     }
 
     const options = {
@@ -173,7 +193,10 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
         )
       );
   } catch (error) {
-    throw new ApiError(401, error?.message || "Invalid refresh token");
+    return res.status(401).json({
+      statusCode: 401,
+      message: error?.message || "Invalid refresh token",
+    });
   }
 });
 
