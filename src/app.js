@@ -16,4 +16,13 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" })); // Parse URL-enc
 app.use(express.static("public")); // Serve static files from the "public" directory
 app.use(cookieParser());
 
+// Import routes
+import userRouter from "./routes/user.route.js";
+
+//Routes declaration
+app.use("/api/v1/user", userRouter);
+
+
+
+//default api endpoint "http://localhost:5000/api/v1/"
 export default app;
