@@ -34,37 +34,37 @@ const healthProfileSchema = new mongoose.Schema(
       default: [],
     },
     otherHealthConditions: {
-      type: String,
-      default: "",
+      type: [String],
+      default: [],
     },
     healthGoals: {
       type: [String], // e.g., ['Lose Weight', 'Build Muscle']
       default: [],
     },
     otherHealthGoals: {
-      type: String,
-      default: "",
+      type: [String],
+      default: [],
     },
     dietaryRestrictions: {
       type: [String], // e.g., ['Vegan', 'Keto']
       default: [],
     },
     otherDietaryRestrictions: {
-      type: String,
-      default: "",
+      type: [String],
+      default: [],
     },
     foodAllergies: {
       type: [String], // e.g., ['Peanuts', 'Milk']
       default: [],
     },
     otherAllergies: {
-      type: String,
-      default: "",
+      type: [String],
+      default: [],
     },
     dietaryPreferences: {
       preferredCuisines: {
-        type: String,
-        default: "",
+        type: [String],
+        default: [],
       },
       mealFrequency: {
         type: String,
@@ -78,8 +78,8 @@ const healthProfileSchema = new mongoose.Schema(
       },
     },
     additionalInformation: {
-      type: String,
-      default: "",
+      type: [String],
+      default: [],
     },
     uploadedFiles: {
       type: [String], // Store file paths or cloud URLs
