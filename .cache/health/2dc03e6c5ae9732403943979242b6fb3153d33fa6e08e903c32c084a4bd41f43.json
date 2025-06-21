@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-06-21T05:37:09.639Z",
+  "result": {
+    "overallRecommendation": "not_recommended",
+    "safetyScore": 30,
+    "suitabilityAnalysis": {
+      "beneficial": [
+        {
+          "aspect": "Low in Protein and Fat",
+          "reason": "The low protein and fat content is generally positive for weight management, which is important for managing type 2 diabetes and hypertension.",
+          "healthBenefit": "May aid in weight management",
+          "relatedConditions": [
+            "Type 2 Diabetes",
+            "Hypertension"
+          ]
+        },
+        {
+          "aspect": "Contains some Fiber",
+          "reason": "The 1g of fiber per serving contributes to improved blood sugar control and gut health.",
+          "healthBenefit": "Supports blood sugar regulation and gut health",
+          "relatedConditions": [
+            "Type 2 Diabetes"
+          ]
+        }
+      ],
+      "concerns": [
+        {
+          "aspect": "High Sodium Content",
+          "severity": "high",
+          "reason": "160mg of sodium per 23g serving is significant.  High sodium intake exacerbates hypertension, increasing the risk of cardiovascular complications.",
+          "healthRisk": "Increased blood pressure and cardiovascular risk",
+          "relatedConditions": [
+            "Hypertension"
+          ],
+          "mitigation": "Strict portion control or complete avoidance."
+        },
+        {
+          "aspect": "Added Sugars",
+          "severity": "moderate",
+          "reason": "The presence of sugar, tapioca maltodextrin, and brown sugar contributes to elevated blood glucose levels, potentially worsening glycemic control in individuals with type 2 diabetes.",
+          "healthRisk": "Increased blood glucose levels and impaired glycemic control",
+          "relatedConditions": [
+            "Type 2 Diabetes"
+          ],
+          "mitigation": "Strict portion control, careful monitoring of blood glucose levels, and consideration of alternative snacks."
+        },
+        {
+          "aspect": "Refined Carbohydrates",
+          "severity": "moderate",
+          "reason": "The high carbohydrate content from potatoes, tapioca maltodextrin, rice flour, and corn starch leads to a rapid spike in blood sugar levels, negatively impacting diabetes management.",
+          "healthRisk": "Rapid blood glucose spikes",
+          "relatedConditions": [
+            "Type 2 Diabetes"
+          ],
+          "mitigation": "Strict portion control, combining with foods that slow carbohydrate absorption (e.g., fiber-rich foods)."
+        }
+      ]
+    },
+    "portionGuidance": {
+      "recommendedServing": "Avoid completely",
+      "frequency": "Never",
+      "reasoning": "The high sodium and added sugar content, combined with the rapid carbohydrate absorption, outweigh any potential benefits for individuals with type 2 diabetes and hypertension.  The risk of exacerbating both conditions is too high."
+    },
+    "alternativeSuggestions": [
+      {
+        "suggestion": "Air-popped popcorn (unsalted)",
+        "reason": "Provides fiber and is low in sodium and sugar."
+      },
+      {
+        "suggestion": "Vegetable sticks with hummus",
+        "reason": "Offers fiber, vitamins, and minerals, with controlled sodium levels."
+      },
+      {
+        "suggestion": "Small portion of unsalted baked sweet potato chips",
+        "reason": "Provides more nutrients than Popchips, but still needs portion control."
+      }
+    ],
+    "keyWarnings": [
+      "High sodium content significantly increases blood pressure risk.",
+      "Added sugars can worsen blood glucose control in type 2 diabetes.",
+      "Refined carbohydrates cause rapid blood sugar spikes."
+    ],
+    "medicalDisclaimer": "This analysis is for informational purposes only and does not constitute medical advice.  Always consult your physician or a registered dietitian before making dietary changes, especially if you have pre-existing health conditions.",
+    "confidence": 95
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-06-21T06:15:15.757Z",
+  "result": {
+    "overallRecommendation": "moderate_caution",
+    "safetyScore": 60,
+    "suitabilityAnalysis": {
+      "beneficial": [
+        {
+          "aspect": "Relatively Low in Calories",
+          "reason": "A single serving contains only 100 calories, which can be beneficial for weight management if consumed as part of a balanced diet.",
+          "healthBenefit": "Weight management",
+          "relatedConditions": []
+        },
+        {
+          "aspect": "Source of Potassium",
+          "reason": "Provides 4% of the daily value of potassium, an essential mineral for maintaining healthy blood pressure.",
+          "healthBenefit": "Blood pressure support (mild)",
+          "relatedConditions": []
+        }
+      ],
+      "concerns": [
+        {
+          "aspect": "High in Sodium",
+          "severity": "moderate",
+          "reason": "Contains 160mg of sodium per serving (approximately 7% of the recommended daily intake).  High sodium intake can contribute to high blood pressure and other cardiovascular issues.",
+          "healthRisk": "Increased risk of hypertension and cardiovascular problems",
+          "relatedConditions": [
+            "undefined Dietary Restriction"
+          ],
+          "mitigation": "Consume in very small portions and/or choose lower-sodium alternatives."
+        },
+        {
+          "aspect": "Added Sugars",
+          "severity": "moderate",
+          "reason": "Contains added sugars from sugar and tapioca maltodextrin.  Regular consumption of added sugars can contribute to weight gain, insulin resistance, and increased risk of chronic diseases.",
+          "healthRisk": "Weight gain, insulin resistance, increased risk of chronic diseases",
+          "relatedConditions": [
+            "undefined Dietary Restriction"
+          ],
+          "mitigation": "Limit consumption and choose unsweetened snacks."
+        },
+        {
+          "aspect": "Processed Carbohydrates",
+          "severity": "moderate",
+          "reason": "Contains tapioca maltodextrin, a highly processed carbohydrate that can lead to blood sugar spikes and contribute to weight gain.",
+          "healthRisk": "Blood sugar spikes, weight gain",
+          "relatedConditions": [
+            "undefined Dietary Restriction"
+          ],
+          "mitigation": "Limit consumption and choose whole-grain snacks."
+        },
+        {
+          "aspect": "Potato Allergen",
+          "severity": "high",
+          "reason": "Contains potatoes, a common allergen.  Individuals with potato allergies should strictly avoid this product.",
+          "healthRisk": "Allergic reaction (ranging from mild to severe)",
+          "relatedConditions": [
+            "undefined Dietary Restriction"
+          ],
+          "mitigation": "Avoid completely if allergic to potatoes."
+        }
+      ]
+    },
+    "portionGuidance": {
+      "recommendedServing": "A maximum of 5-7 chips (approximately 1/4 of the bag)",
+      "frequency": "occasionally",
+      "reasoning": "Due to the high sodium and added sugar content, this snack should be consumed sparingly.  Larger portions or frequent consumption could negatively impact health."
+    },
+    "alternativeSuggestions": [
+      {
+        "suggestion": "Air-popped popcorn",
+        "reason": "A lower-calorie, lower-sodium, and lower-sugar alternative snack."
+      },
+      {
+        "suggestion": "Baked vegetable chips",
+        "reason": "Provides more nutrients and fiber than potato chips."
+      },
+      {
+        "suggestion": "Fruits and vegetables",
+        "reason": "Naturally sweet and nutrient-rich snacks."
+      }
+    ],
+    "keyWarnings": [
+      "High sodium content may exacerbate hypertension.",
+      "Added sugars can contribute to weight gain and other health problems.",
+      "Contains potatoes – avoid if allergic.",
+      "Consult your doctor or registered dietitian before incorporating this snack into your diet, especially given your undefined dietary restrictions."
+    ],
+    "medicalDisclaimer": "This analysis is for informational purposes only and does not constitute medical advice.  Always consult with your healthcare provider or a registered dietitian before making any dietary changes, especially if you have pre-existing health conditions or are taking medications.",
+    "confidence": 90
+  },
+  "version": "1.0"
+}

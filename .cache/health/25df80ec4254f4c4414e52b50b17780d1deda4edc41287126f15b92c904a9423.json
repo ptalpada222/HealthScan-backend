@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-06-21T05:53:37.046Z",
+  "result": {
+    "overallRecommendation": "moderate_caution",
+    "safetyScore": 60,
+    "suitabilityAnalysis": {
+      "beneficial": [
+        {
+          "aspect": "Relatively Low in Calories",
+          "reason": "A serving contains only 100 calories, which can be beneficial for weight management if consumed as part of a balanced diet.",
+          "healthBenefit": "Weight management",
+          "relatedConditions": [
+            "Obesity",
+            "Weight Management"
+          ]
+        },
+        {
+          "aspect": "Source of Fiber",
+          "reason": "Provides 1g of fiber per serving, contributing to digestive health.",
+          "healthBenefit": "Improved Digestion",
+          "relatedConditions": [
+            "Constipation"
+          ]
+        }
+      ],
+      "concerns": [
+        {
+          "aspect": "High Sodium Content",
+          "severity": "moderate",
+          "reason": "Contains 160mg of sodium per serving (23g).  Regular consumption of high-sodium foods can contribute to high blood pressure, especially concerning for individuals with pre-existing hypertension or cardiovascular issues.  The undefined dietary restrictions could potentially relate to sodium intake.",
+          "healthRisk": "Increased Blood Pressure, Cardiovascular Issues",
+          "relatedConditions": [
+            "Hypertension",
+            "Cardiovascular Disease"
+          ],
+          "mitigation": "Reduce portion size and limit frequency of consumption. Consider low-sodium alternatives."
+        },
+        {
+          "aspect": "Added Sugars",
+          "severity": "moderate",
+          "reason": "Contains added sugars (2g per serving) from sugar, tapioca maltodextrin, and brown sugar.  Excessive sugar intake is linked to weight gain, type 2 diabetes, and other metabolic issues. The undefined dietary restrictions could relate to sugar intake or blood glucose control.",
+          "healthRisk": "Weight Gain, Type 2 Diabetes, Metabolic Syndrome",
+          "relatedConditions": [
+            "Obesity",
+            "Type 2 Diabetes",
+            "Metabolic Syndrome"
+          ],
+          "mitigation": "Reduce portion size and limit frequency of consumption. Choose unsweetened snacks whenever possible."
+        },
+        {
+          "aspect": "Processed Food",
+          "severity": "low",
+          "reason": "Popchips are a processed food, meaning they have undergone significant processing, potentially affecting nutrient content and overall health benefits.  The processing may also introduce other less desirable compounds.",
+          "healthRisk": "Reduced Nutrient Density, Potential for Unhealthy Additives",
+          "relatedConditions": [
+            "Various metabolic conditions"
+          ],
+          "mitigation": "Consume sparingly as part of a balanced diet rich in whole, unprocessed foods."
+        }
+      ]
+    },
+    "portionGuidance": {
+      "recommendedServing": "No more than one 23g serving",
+      "frequency": "Occasionally (e.g., 1-2 times per week maximum)",
+      "reasoning": "To minimize sodium and added sugar intake, consumption should be limited.  This product should not be a regular part of the diet."
+    },
+    "alternativeSuggestions": [
+      {
+        "suggestion": "Air-popped popcorn",
+        "reason": "Provides fiber and is lower in sodium and added sugars than Popchips."
+      },
+      {
+        "suggestion": "Vegetable sticks with hummus",
+        "reason": "Offers a healthier snack option with more nutrients and less processed ingredients."
+      },
+      {
+        "suggestion": "Plain baked potato chips",
+        "reason": "A less processed alternative, though still high in sodium, offering more control over added seasonings."
+      }
+    ],
+    "keyWarnings": [
+      "High sodium content may exacerbate hypertension or cardiovascular issues.",
+      "Added sugars can contribute to weight gain and metabolic problems.",
+      "Undefined dietary restrictions may interact negatively with this product; consult your doctor or registered dietitian."
+    ],
+    "medicalDisclaimer": "This analysis is for informational purposes only and does not constitute medical advice.  Always consult with your healthcare provider or a registered dietitian before making dietary changes, especially if you have pre-existing health conditions or undefined dietary restrictions.",
+    "confidence": 75
+  },
+  "version": "1.0"
+}

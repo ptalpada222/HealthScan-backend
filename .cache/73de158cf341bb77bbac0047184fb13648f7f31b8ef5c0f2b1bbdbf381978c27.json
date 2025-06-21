@@ -1,0 +1,188 @@
+{
+  "timestamp": "2025-06-21T06:15:08.629Z",
+  "result": {
+    "productName": "Barbecue Popchips",
+    "brand": "Popchips",
+    "category": "Potato Chips",
+    "ingredients": [
+      {
+        "name": "Potatoes",
+        "order": 1,
+        "isAllergen": true,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Sugar",
+        "order": 2,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": true,
+        "concerns": []
+      },
+      {
+        "name": "Tapioca Maltodextrin",
+        "order": 3,
+        "isAllergen": false,
+        "isAdditive": true,
+        "isSugar": true,
+        "concerns": [
+          "Added Sugar",
+          "Processed Carbohydrate"
+        ]
+      },
+      {
+        "name": "Vegetable Oil",
+        "order": 4,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Salt",
+        "order": 5,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": [
+          "High Sodium"
+        ]
+      },
+      {
+        "name": "Brown Sugar",
+        "order": 6,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": true,
+        "concerns": [
+          "Added Sugar"
+        ]
+      },
+      {
+        "name": "Spice",
+        "order": 7,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Natural Flavor",
+        "order": 8,
+        "isAllergen": false,
+        "isAdditive": true,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Garlic Powder",
+        "order": 9,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Onion Powder",
+        "order": 10,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Tomato Powder",
+        "order": 11,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Paprika Extract",
+        "order": 12,
+        "isAllergen": false,
+        "isAdditive": true,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Other Spices",
+        "order": 13,
+        "isAllergen": false,
+        "isAdditive": false,
+        "isSugar": false,
+        "concerns": []
+      },
+      {
+        "name": "Citric Acid",
+        "order": 14,
+        "isAllergen": false,
+        "isAdditive": true,
+        "isSugar": false,
+        "concerns": []
+      }
+    ],
+    "nutrition": {
+      "servingSize": "1 bag (23g)",
+      "servingsPerContainer": 1,
+      "calories": 100,
+      "macros": {
+        "protein": 1,
+        "totalCarbs": 16,
+        "dietaryFiber": 1,
+        "totalSugars": 2,
+        "addedSugars": 1,
+        "totalFat": 3.5,
+        "saturatedFat": 0,
+        "transFat": 0
+      },
+      "micronutrients": {
+        "sodium": 160,
+        "cholesterol": 0,
+        "vitamins": [],
+        "minerals": [
+          {
+            "name": "Calcium",
+            "amount": "10mg",
+            "dv": 0
+          },
+          {
+            "name": "Iron",
+            "amount": "0mg",
+            "dv": 0
+          },
+          {
+            "name": "Potassium",
+            "amount": "150mg",
+            "dv": 4
+          }
+        ]
+      }
+    },
+    "allergens": [
+      "Potatoes"
+    ],
+    "dietaryInfo": {
+      "isVegan": true,
+      "isVegetarian": true,
+      "isGlutenFree": null,
+      "isKeto": null,
+      "isDairy": false
+    },
+    "healthMetrics": {
+      "healthScore": 45,
+      "processingLevel": "processed",
+      "novaGroup": 4,
+      "warnings": [
+        "High in Sodium",
+        "Added Sugars"
+      ],
+      "benefits": []
+    },
+    "confidence": 0.95
+  },
+  "version": "1.0"
+}
